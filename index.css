@@ -1,0 +1,15 @@
+body{
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+p {
+    width: 100%;
+    font-size: 24px;
+}
+span.selected {
+    background-color: #999;
+}

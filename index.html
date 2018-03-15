@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+    <meta http-equiv="Content-Type">
+    <meta content="text/html; charset=utf-8">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-touch-fullscreen" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="default">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="HandheldFriendly" content="True">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="format-detection" content="email=no">
+    <meta name="msapplication-tap-highlight" content="no">
+    <link rel="stylesheet" href="index.css">
+    <title>仿轻芒 Mark 操作——demo</title>
+    <script>
+    </script>
+
+</head>
+
+<body>
+<div id="app">
+    <div id="body"
+         @touchstart="handleTouchStart"
+         @touchend="handleTouchEnd">
+        <template v-for="p in data" v-if="data">
+            <p v-if="p.type===0" :data-id="p.id">
+                <span v-for="(sentence, index) in p.text.text"
+                      :class="{selected: sentence.selected}"
+                      :data-index="index"
+                      v-if="sentence">{{sentence.text}}</span>
+            </p>
+        </template>
+    </div>
+</div>
+<script src="data.js"></script>
+<script src="vue.js"></script>
+<script src="index.js"></script>
+</body>
+</html>
