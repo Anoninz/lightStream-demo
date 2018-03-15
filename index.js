@@ -97,7 +97,6 @@ var app = new Vue({
                             }
                             // 清除选中效果
                             text.selected = false
-                            
                         })
                     }
                 })
