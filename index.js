@@ -102,6 +102,8 @@ var app = new Vue({
                     }
                 })
                 this.markedText = arr.join(' ')
+                // 输出结果
+                alert(`你马克了：${this.markedText}`)
             }
             // 关闭选择模式
             this.recordTarget = false
@@ -109,8 +111,6 @@ var app = new Vue({
             if (this.timer) {
                 clearTimeout(this.timer)
             }
-            // 输出结果
-            alert(`你马克了：${this.markedText}`)
         },
     },
     
